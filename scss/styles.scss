@@ -1,0 +1,424 @@
+@import "normalize";
+$font1: Lato_Light, sans-serif;
+$font2: Lato_Bold, sans-serif;
+$font3: PlayfairDisplay_Bold, sans-serif;
+$font-size-block:15px;
+$font-size-button:20px;
+$font-size-h2:35px;
+
+@font-face {
+  font-family: Lato_Light;
+  src: url("../fonts/Lato-Light.ttf ");
+}
+
+@font-face {
+  font-family: Lato_Bold;
+  src: url("../fonts/Lato-Bold.ttf ")
+}
+
+@font-face {
+  font-family: PlayfairDisplay_Bold;
+  src: url("../fonts/PlayfairDisplay-Bold.ttf ")
+}
+
+body{
+  background: url("../img/girl_fons.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    background-size:100%;
+
+  }
+}
+header{
+  background: rgba(255,255,255,0.7);
+}
+.wrapper {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  @media(max-width: 1000px) {
+    width: 96%;
+  }
+}
+
+.left {
+  float: left;
+  display: inline-block;
+  height: 59px;
+  text-aling: left;
+  margin: 35px 0 0 15px;
+  font-family: $font2;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: $font-size-block;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: none;
+  }
+
+  a{
+    color: #a0a0a0;
+    font-size: 18px;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+}
+
+.right{
+	float:right;
+	width: 180px;
+	height: 59px;
+	text-aling:right;
+  margin: 35px 0;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: none;
+  }
+  a{
+    color: #a0a0a0;
+    font-size: 18px;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+}
+.meny button{
+  @media screen and (min-width: 1200px){
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: inline-block;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+.centr{
+  display: inline-block;
+  text-align: center;
+  margin: 35px auto;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin:35px 0 0 40px;
+  }
+
+  a{
+    color:#c0a064;
+    font-size: 18px;
+    text-decoration: none;
+  }
+}
+h1{
+  font-family: $font3;
+  font-size: 60px;
+  color:#c0a064;
+  text-align: center;
+  margin-top: 355px;
+}
+
+h3{
+  letter-spacing: 7px;
+  font-family: $font1;
+  font-size: 24px;
+  margin: 40px 0 125px 0;
+  text-align: center;
+}
+
+.discover{
+  display: block;
+  padding-bottom: 218px;
+  text-decoration: none;
+  button{
+    display: block;
+    margin:0 auto 0;
+    font-family: $font2;
+    font-size: $font-size-button;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#c0a064;
+    background: none;
+    border:3px #c0a064 solid;
+    padding: 20px 60px 20px 60px;
+    cursor:pointer;
+  }
+}
+h2 {
+  font-family: $font3;
+  font-size: 50px;
+  color:#c0a064;
+  text-align: center;
+
+}
+
+.recent_work {
+  background: white;
+  h2 {
+    font-family: $font3;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 55px;
+    margin-top: 0;
+    padding-top: 125px;
+  }
+
+  .bloc1 {
+    display: inline-block;
+    float: left;
+    margin: 25px 0;
+    width: 780px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      float: none;
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+  }
+
+  .bloc2 {
+    float: left;
+    margin: 25px 0;
+    width: 370px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      float: none;
+      width: 107%;
+      height: auto;
+      margin: 15px 20px 0 -23px;
+
+    }
+
+  }
+  .img1 {
+    display: inline-block;
+    margin: 0px auto;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      float: none;
+      box-sizing: border-box;
+      width: auto;
+
+    }
+    }
+
+  .img2 {
+    display: inline-block;
+    margin: 0px 0 30px 30px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      float: none;
+      box-sizing: border-box;
+      width: auto;
+
+    }
+
+  }
+  .img3 {
+    display: inline-block;
+    margin: 0px 0 30px 30px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      float: none;
+      box-sizing: border-box;
+      width: auto;
+
+    }
+  }
+  .img4 {
+    float: none;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+        padding: 0 0 50px 0;
+    img {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.shopipg{
+  margin: 0px auto;
+  overflow: hidden;
+  width:100%;
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    margin-bottom: 60px;
+  }
+  img{
+
+    float: left;
+    width: 50%;
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+      width:100%;
+      float: none;
+      margin:0 auto;
+    }
+  }
+  .shopingt_text {
+
+    float: right;
+    width: 50%;
+    padding: 50px 150px 50px 60px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 50%;
+      float: none;
+      padding: 50px 0 50px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: $font-size-h2;
+      font-family: $font3, sans-serif;
+      padding-top:0px;
+      margin: 0 0 30px 0;
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+        text-align: center;
+      }
+    }
+    p {
+      font-family: $font1;
+      font-size: $font-size-block;
+      margin: 0 0 55px 0;
+      line-height: 30px;
+      color: #6c6a68;
+    }
+    a {
+      display: block;
+      float: left;
+      text-decoration: none;
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin:0 auto;
+        width:100%;
+      }
+      button {
+        padding: 15px 55px 15px 55px;
+        display: block;
+        margin:0 auto 0;
+        font-family: $font2;
+        font-size: $font-size-button;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color:#c0a064;
+        background: none;
+        border:2px #c0a064 solid;
+        cursor:pointer;
+      }
+    }
+  }
+}
+
+.earth{
+  @extend .shopipg;
+  img {
+    float: right;
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+      width:100%;
+      float: none;
+      margin:0 auto;
+    }
+  }
+  &_text{
+    @extend .shopingt_text;
+    float: left;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 50%;
+      float: none;
+      padding: 51px 0;
+      margin: 0 auto;
+    }
+  }
+
+}
+.pfofil{
+  @extend .shopipg;
+  img {
+    /*display: block;*/
+    float: left;
+    /*width: 50%;*/
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+      width:100%;
+      float: none;
+      margin:0 auto;
+    }
+  }
+  &_text{
+    @extend .shopingt_text;
+  }
+}
+.last_line{
+  padding: 50px 0 50px 0;
+  h2{ 
+    font-size: $font-size-h2;
+    margin:0 auto 60px;
+  }
+  form{
+    display: block;
+    margin: 0 auto 60px;
+    width: 30%;
+    input[name="name"]{
+    
+      
+     
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      border-left: 2px solid black;
+
+      width: 100%;
+      padding:20px;
+      font-family: $font1;
+      font-size: $font-size-block;
+     
+      }
+    input[name="e-mail"]{
+      @extend input[name="name"]
+    }
+    textarea{
+      @extend input[name="name"];
+      border-bottom: 2px solid black;
+      margin-bottom: 20px;
+    }
+    input[name="Send"]{
+      display: block;
+      margin:0 auto 0;
+      font-family: $font2;
+      font-size: $font-size-button;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color:#c0a064;
+      background: none;
+      border:3px #c0a064 solid;
+      padding: 15px 55px 15px 55px;
+      cursor:pointer;
+      width: 100%;
+    }
+  }
+  h4{
+    display: block;
+    font-family: $font1;
+    font-size: $font-size-block;
+    color: #6c6a68;
+    text-align: center;
+  }
+  .last_cocial{
+    display: block;
+    text-align: center;
+    a{
+      color:#000000;
+      font-size: 18px;
+      margin-right: 25px;
+    }
+  }
+}
+
+footer {
+ background: #fcdb00
+ ;
+  margin: 0px auto 0;
+
+  font-size: 33px;
+  color: white;
+  text-align: center;
+  padding: 55px;
+}
+
+
+
